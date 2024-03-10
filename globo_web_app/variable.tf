@@ -1,17 +1,3 @@
-variable "aws_access_key" {
-  type        = string
-  description = "AWS Access Key"
-  sensitive   = true
-  #export TF_VAR_aws_access_key=YOUR_ACCESS_KEY
-}
-
-variable "aws_secret_key" {
-  type        = string
-  description = "AWS Secret Key"
-  sensitive   = true
-  #export TF_VAR_aws_secret_key=YOUR_SECRET_KEY
-}
-
 variable "aws_region" {
   type        = string
   description = "AWS Region to use for resoureces."
@@ -63,5 +49,3 @@ variable "billing_code" {
   type        = string
   description = "Billing code for resource tagging."
 }
-
-
